@@ -39,7 +39,7 @@ variable "up_recurrence" {
   default     = "0 6 * * MON-FRI"
 }
 
-variable "down_reccurence" {
+variable "down_recurrence" {
   description = "Down Reccurence"
   default     = "0 20 * * *"
 }

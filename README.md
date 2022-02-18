@@ -108,7 +108,7 @@ data "aws_iam_policy_document" "ssm_access" {
     condition {
       test = "ForAnyValue:StringEqualsIfExists"
       values = [local.access_tag_value]
-      variable = "ssm:resourceTag/${local.access_tag_key}"
+      variable = "aws:ResourceTag/${local.access_tag_key}"
     }
   }
   statement {
